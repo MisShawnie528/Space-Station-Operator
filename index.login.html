@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+        <!--Shawna Lundberg-->
+        <!--  This is the link to the javascript to go with the form-->
+        <script src="script.js"></script>
+        <link href="login.css" rel="stylesheet" type="text/css" />
+    <head>
+        <!--title of assignment-->
+        <title>Assignment:  Mission Control Operator - Login</title>
+    </head>
+
+    <body>
+            <!--image for space program-->
+        <img src="UATspaceLogo-2.jpg">
+        <!-- Header 1-->
+        <h1>UAT Space Program Login</h1>
+                <!-- Spacing-->
+                <br></br>
+                <br></br>
+        <!-- Header 2 also displays the Error messages depending on the onclick results & the conditions being met-->
+        <h2 id="loginStatus" class="loginID">Please Enter Your Creditentials</h2>
+                <br></br>
+                <br></br>        
+                <!--This is the form used to login, must fill out all areas before able to proceed without error-->
+                <form id="verifyCred" onsubmit="return false">
+                    <!--enter first name following the conditions applied-->
+                First Name      <input type="text" id="firstName" /> 
+                    <br></br>
+                    <!-- must enter all 3 areas correct to allow access-->
+                Last Name       <input type="text" id="lastName" />
+                    <br></br>
+                    <!-- if the badge number is not between 100-999, the user will not be able to procceed-->
+                Badge ID #     <input type="number" id="badgeNum" /> 
+                    <br></br>
+                    <!--Submit button, it initiates the function "verifyCred() to begin checking the user's input"-->
+                    <input type="submit" onclick="verifyCred();" />
+                    </form>
+    </body>
+
+</html>
